@@ -41,10 +41,15 @@ public class afterLogin {
 
     @FXML
     void goToEmp(ActionEvent event) throws IOException {
-    	Main m = new Main();
-    	m.changeScene("employees.fxml");
+    	goEmp();
     }
 
+ 
+	private void goEmp() throws IOException {
+    	  mainEmp m = new mainEmp();
+    		m.changeScene("employees.fxml");
+    }
+  
     @FXML
     void goToStat(ActionEvent event) {
 
